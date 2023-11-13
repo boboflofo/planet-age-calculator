@@ -1,3 +1,5 @@
+import {ageCalculator} from "./../src/age-calculator.js"
+
 describe("ageCalculator", () => {
   let humanAge;
 
