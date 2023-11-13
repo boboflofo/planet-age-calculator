@@ -9,4 +9,9 @@ describe("ageCalculator", () => {
   test("should return the age in earth years after given age parameter", () => {
     expect(humanAge.earth).toEqual(20);
   });
+
+  test("should return the age in mercury years after given age parameter", () => {
+    expect(humanAge.mercury).toEqual(83.33);
+  });
+
 });
