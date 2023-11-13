@@ -56,3 +56,16 @@ describe("ageCalculator.yearsSinceBday", () => {
   })
 
 })
+
+describe("ageCalculator.yearsTillBday", () => {
+  let humanAge;
+
+  beforeEach(() => {
+    humanAge = new ageCalculator(20);
+  })
+  
+  test("should return a list of objects corresponding with planet and year difference", () => {
+    expect(humanAge.yearsTillBday(30)[0]).toEqual({earth:10})
+  })
+
+})
