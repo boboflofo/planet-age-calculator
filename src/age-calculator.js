@@ -22,7 +22,8 @@ export class ageCalculator {
     const mercuryDiff = +(earthDiff/.24).toFixed(2)
     const venusDiff = +(earthDiff/.62).toFixed(2)
     const marsDiff = +(earthDiff/1.88).toFixed(2)
+    const jupiterDiff = +(earthDiff/11.86).toFixed(2)
 
-    return [{earth:earthDiff},{mercury:mercuryDiff},{venus:venusDiff},{mars:marsDiff}]
+    return [{earth:earthDiff},{mercury:mercuryDiff},{venus:venusDiff},{mars:marsDiff},{jupiter:jupiterDiff}]
   }
 }
