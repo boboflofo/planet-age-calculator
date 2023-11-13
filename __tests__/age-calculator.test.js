@@ -51,4 +51,8 @@ describe("ageCalculator.yearsSinceBday", () => {
     expect(humanAge.yearsSinceBday(13)[3]).toEqual({mars:3.72})
   })
 
+  test("should return a list of objects corresponding with planet and year difference", () => {
+    expect(humanAge.yearsSinceBday(13)[4]).toEqual({jupiter:0.59})
+  })
+
 })
