@@ -38,4 +38,8 @@ describe("ageCalculator.yearsSinceBday", () => {
   test("should return an object with the years difference since birthday in earth years", () => {
     expect(humanAge.yearsSinceBday(13)).toEqual({earth:7})
   })
+
+  test("should return a list of objects corresponding with planet and year difference", () => {
+    expect(humanAge.yearsSinceBday(13).toEqual({earth:7},{mercury:29.17}))
+  })
 })
