@@ -16,4 +16,10 @@ export class ageCalculator {
 
     return [{earth:earthDiff},{mercury:mercuryDiff},{venus:venusDiff},{mars:marsDiff}, {jupiter:jupiterDiff}]
   }
+
+  yearsTillBday(bday) {
+    const earthDiff = bday-this.earth
+
+    return [{earth:earthDiff}]
+  }
 }
