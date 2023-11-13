@@ -14,4 +14,8 @@ describe("ageCalculator", () => {
     expect(humanAge.mercury).toEqual(83.33);
   });
 
+  test("should return the age in venus years after given age parameter", () => {
+    expect(humanAge.venus).toEqual(32.26);
+  });
+
 });
