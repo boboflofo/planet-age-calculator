@@ -27,3 +27,15 @@ describe("ageCalculator", () => {
   });
 
 });
+
+describe("ageCalculator.yearsSinceBday", () => {
+  let humanAge;
+
+  beforeEach(() => {
+    humanAge = new ageCalculator(20);
+  })
+
+  test("should return an object with the years difference since birthday in earth years", () => {
+    expect(ageCalculator.yearsSinceBday(13).toEqual({earth:7}))
+  })
+})
