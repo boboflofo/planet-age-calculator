@@ -44,7 +44,11 @@ describe("ageCalculator.yearsSinceBday", () => {
   })
 
   test("should return a list of objects corresponding with planet and year difference", () => {
-    expect(humanAge.yearsSinceBday(13)[2]).toEqual({venus:11.3})
+    expect(humanAge.yearsSinceBday(13)[2]).toEqual({venus:11.29})
+  })
+
+  test("should return a list of objects corresponding with planet and year difference", () => {
+    expect(humanAge.yearsSinceBday(13)[3]).toEqual({mars:3.72})
   })
 
 })
