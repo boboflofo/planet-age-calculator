@@ -36,6 +36,6 @@ describe("ageCalculator.yearsSinceBday", () => {
   })
 
   test("should return an object with the years difference since birthday in earth years", () => {
-    expect(ageCalculator.yearsSinceBday(13).toEqual({earth:7}))
+    expect(humanAge.yearsSinceBday(13)).toEqual({earth:7})
   })
 })
