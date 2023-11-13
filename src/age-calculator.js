@@ -6,4 +6,8 @@ export class ageCalculator {
     this.mars = +(age/1.88).toFixed(2)
     this.jupiter = +(age/11.86).toFixed(2)
   }
+
+  yearsSinceBday(bday) {
+
+  }
 }
