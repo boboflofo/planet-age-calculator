@@ -39,19 +39,19 @@ describe("ageCalculator.yearsSinceBday", () => {
     expect(humanAge.yearsSinceBday(13)[0]).toEqual({earth:7})
   })
 
-  test("should return a list of objects corresponding with planet and year difference", () => {
+  test("should return a list of objects corresponding with planet and year difference for mercury", () => {
     expect(humanAge.yearsSinceBday(13)[1]).toEqual({mercury:29.17})
   })
 
-  test("should return a list of objects corresponding with planet and year difference", () => {
+  test("should return a list of objects corresponding with planet and year difference for venus", () => {
     expect(humanAge.yearsSinceBday(13)[2]).toEqual({venus:11.29})
   })
 
-  test("should return a list of objects corresponding with planet and year difference", () => {
+  test("should return a list of objects corresponding with planet and year difference for mars", () => {
     expect(humanAge.yearsSinceBday(13)[3]).toEqual({mars:3.72})
   })
 
-  test("should return a list of objects corresponding with planet and year difference", () => {
+  test("should return a list of objects corresponding with planet and year difference for jupiter", () => {
     expect(humanAge.yearsSinceBday(13)[4]).toEqual({jupiter:0.59})
   })
 
@@ -64,8 +64,13 @@ describe("ageCalculator.yearsTillBday", () => {
     humanAge = new ageCalculator(20);
   })
   
-  test("should return a list of objects corresponding with planet and year difference", () => {
+  test("should return a list of objects corresponding with planet and year difference for earth", () => {
     expect(humanAge.yearsTillBday(30)[0]).toEqual({earth:10})
   })
+
+  test("should return a list of objects corresponding with planet and year difference for mercury", () => {
+    expect(humanAge.yearsTillBday(30)[1]).toEqual({mercury:41.67})
+  })
+
 
 })
