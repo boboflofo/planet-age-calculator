@@ -72,5 +72,9 @@ describe("ageCalculator.yearsTillBday", () => {
     expect(humanAge.yearsTillBday(30)[1]).toEqual({mercury:41.67})
   })
 
+  test("should return a list of objects corresponding with planet and year difference for mercury", () => {
+    expect(humanAge.yearsTillBday(30)[2]).toEqual({venus:16.13})
+  })
+
 
 })
