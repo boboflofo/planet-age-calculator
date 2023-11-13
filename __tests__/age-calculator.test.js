@@ -18,4 +18,8 @@ describe("ageCalculator", () => {
     expect(humanAge.venus).toEqual(32.26);
   });
 
+  test("should return the age in mars years after given age parameter", () => {
+    expect(humanAge.mars).toEqual(10.64);
+  });
+
 });
