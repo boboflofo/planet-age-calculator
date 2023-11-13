@@ -8,6 +8,6 @@ export class ageCalculator {
   }
 
   yearsSinceBday(bday) {
-
+    return {earth:(this.earth-bday)}
   }
 }

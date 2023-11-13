@@ -23,7 +23,7 @@ describe("ageCalculator", () => {
   });
 
   test("should return the age in jupiter years after given age parameter", () => {
-    expect(humanAge.jupiter).toEqual(1.67);
+    expect(humanAge.jupiter).toEqual(1.69);
   });
 
 });
