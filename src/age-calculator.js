@@ -19,7 +19,8 @@ export class ageCalculator {
 
   yearsTillBday(bday) {
     const earthDiff = bday-this.earth
+    const mercuryDiff = +(earthDiff/.24).toFixed(2)
 
-    return [{earth:earthDiff}]
+    return [{earth:earthDiff},{mercury:mercuryDiff}]
   }
 }
