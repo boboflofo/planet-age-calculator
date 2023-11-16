@@ -23,7 +23,11 @@ Website that asks users for age and uses that age to convert it to different yea
 * Open a code editor such as VScode and in the terminal git clone the project for editing capabilities
 * Install dependencies using command in terminal **npm install**
 * Personalize and edit directly in your code editor!
+* Under the package.json file, rename the name object to the name of your desired project
 * Ensure that the code is bundled by using command in terminal **npm run build**
+* Run command **npm run start** to start a live server
+* Run command **npm run test** to run jest for testing 
+* Run command **npm run lint** to lint project before running to ensure that the code is error free
 
 
 
