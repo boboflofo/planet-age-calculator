@@ -14,13 +14,13 @@ export class ageCalculator {
     const marsDiff = +(earthDiff / 1.88).toFixed(2);
     const jupiterDiff = +(earthDiff / 11.86).toFixed(2);
 
-    return [
-      { earth: earthDiff },
-      { mercury: mercuryDiff },
-      { venus: venusDiff },
-      { mars: marsDiff },
-      { jupiter: jupiterDiff },
-    ];
+    return {
+      earth: earthDiff,
+      mercury: mercuryDiff,
+      venus: venusDiff,
+      mars: marsDiff,
+      jupiter: jupiterDiff,
+    };
   }
 
   yearsTillBday(bday) {
@@ -30,12 +30,13 @@ export class ageCalculator {
     const marsDiff = +(earthDiff / 1.88).toFixed(2);
     const jupiterDiff = +(earthDiff / 11.86).toFixed(2);
 
-    return [
-      { earth: earthDiff },
-      { mercury: mercuryDiff },
-      { venus: venusDiff },
-      { mars: marsDiff },
-      { jupiter: jupiterDiff },
-    ];
+    return {
+      earth: earthDiff,
+      mercury: mercuryDiff,
+      venus: venusDiff,
+      mars: marsDiff,
+      jupiter: jupiterDiff,
+    };
+    
   }
 }

@@ -36,23 +36,23 @@ describe("ageCalculator.yearsSinceBday", () => {
   })
 
   test("should return an object with the years difference since birthday in earth years", () => {
-    expect(humanAge.yearsSinceBday(13)[0]).toEqual({earth:7})
+    expect(humanAge.yearsSinceBday(13).earth).toEqual(7)
   })
 
   test("should return a list of objects corresponding with planet and year difference for mercury", () => {
-    expect(humanAge.yearsSinceBday(13)[1]).toEqual({mercury:29.17})
+    expect(humanAge.yearsSinceBday(13).mercury).toEqual(29.17)
   })
 
   test("should return a list of objects corresponding with planet and year difference for venus", () => {
-    expect(humanAge.yearsSinceBday(13)[2]).toEqual({venus:11.29})
+    expect(humanAge.yearsSinceBday(13).venus).toEqual(11.29)
   })
 
   test("should return a list of objects corresponding with planet and year difference for mars", () => {
-    expect(humanAge.yearsSinceBday(13)[3]).toEqual({mars:3.72})
+    expect(humanAge.yearsSinceBday(13).mars).toEqual(3.72)
   })
 
   test("should return a list of objects corresponding with planet and year difference for jupiter", () => {
-    expect(humanAge.yearsSinceBday(13)[4]).toEqual({jupiter:0.59})
+    expect(humanAge.yearsSinceBday(13).jupiter).toEqual(0.59)
   })
 
 })
@@ -65,22 +65,22 @@ describe("ageCalculator.yearsTillBday", () => {
   })
   
   test("should return a list of objects corresponding with planet and year difference for earth", () => {
-    expect(humanAge.yearsTillBday(30)[0]).toEqual({earth:10})
+    expect(humanAge.yearsTillBday(30).earth).toEqual(10)
   })
 
   test("should return a list of objects corresponding with planet and year difference for mercury", () => {
-    expect(humanAge.yearsTillBday(30)[1]).toEqual({mercury:41.67})
+    expect(humanAge.yearsTillBday(30).mercury).toEqual(41.67)
   })
 
   test("should return a list of objects corresponding with planet and year difference for venus", () => {
-    expect(humanAge.yearsTillBday(30)[2]).toEqual({venus:16.13})
+    expect(humanAge.yearsTillBday(30).venus).toEqual(16.13)
   })
 
   test("should return a list of objects corresponding with planet and year difference for mars", () => {
-    expect(humanAge.yearsTillBday(30)[3]).toEqual({mars:5.32})
+    expect(humanAge.yearsTillBday(30).mars).toEqual(5.32)
   })
 
   test("should return a list of objects corresponding with planet and year difference for mars", () => {
-    expect(humanAge.yearsTillBday(30)[4]).toEqual({jupiter:0.84})
+    expect(humanAge.yearsTillBday(30).jupiter).toEqual(0.84)
   })
 })
